@@ -1,0 +1,27 @@
+[package]
+name = "sigmaos-screen-recorder"
+version = "0.1.0"
+edition = "2021"
+authors = ["SigmaOS Project"]
+description = "Screen recording with multiple formats and state machine"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-screen-recorder"
+readme = "README.md"
+keywords = ["screen", "recorder", "video", "sigmaos"]
+categories = ["multimedia"]
+
+[dependencies]
+# Minimal dependencies for standalone operation
+
+[features]
+default = ["std"]
+std = []
+no_std = []
+
+[profile.dev]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+lto = true
