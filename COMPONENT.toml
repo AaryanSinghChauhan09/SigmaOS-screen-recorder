@@ -1,0 +1,16 @@
+[component]
+name = "SigmaOS-screen-recorder"
+tier = 3
+stability = "scaffold"
+language = "rust"
+description = "Hardware-accelerated desktop screen and window recorder using PipeWire and GStreamer"
+upstream = ["https://github.com/linuxmint/mintsystem"]
+
+[contract]
+provides = ["screen-recorder", "pipewire-video-capture", "hardware-encoder-shim"]
+depends_on = []
+
+[maturity]
+status = "Scaffold"
+test_evidence = "Compiles and passes AAA unit tests"
+next_milestone = "Hardware and runtime integration"
